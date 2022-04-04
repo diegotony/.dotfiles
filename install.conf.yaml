@@ -3,3 +3,10 @@
 - link:
 
 
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.zshrc: zshrc
+
+
