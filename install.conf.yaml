@@ -7,8 +7,15 @@
 - link:
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
-    ~/.oh: zshrc
-    ~/.oh-my-zsh/custom/plugins: .oh-my-zsh/custom/plugins
-
+    ~/.oh-my-zsh/custom/: 
+      create: true
+      relink: true
+      path: oh-my-zsh-custom/
+    ~/.p10k.zsh: 
+      create: true
+      relink: true
+      path: p10k
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - chsh -s $(which zsh)
+  - [chsh -s $(which zsh), Making zsh the default shell]
