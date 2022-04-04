@@ -99,6 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Golang
 source /home/kakashi/.gvm/scripts/gvm
 gvm use 1.16
+
+# AWS 
+export PATH=/usr/local/bin:$PATH
 

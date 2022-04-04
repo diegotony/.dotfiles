@@ -1,12 +1,14 @@
-- clean: ['~']
-
-- link:
-
+- defaults:
+    link:
+      relink: true
 
 - clean: ['~']
 
 - link:
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc
+    ~/.oh: zshrc
+    ~/.oh-my-zsh/custom/plugins: .oh-my-zsh/custom/plugins
 
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
