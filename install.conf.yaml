@@ -21,11 +21,14 @@
       create: true
       relink: true
       path: p10k
-    ~/.oh-my-zsh/custom/:
-      glob: true
+    ~/.oh-my-zsh/custom/plugins:
       create: true
       relink: true
-      path: oh-my-zsh-custom/*
+      path: oh-my-zsh/custom/plugins/
+    ~/.oh-my-zsh/custom/themes:
+      create: true
+      relink: true
+      path: oh-my-zsh/custom/themes/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - chsh -s $(which zsh)
