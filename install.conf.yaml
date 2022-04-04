@@ -1,11 +1,21 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ['~']
 
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+    ~/.oh-my-zsh/custom/:
+      recursive: true
+
 - link:
     ~/.bashrc: bashrc
+    ~/.tool-versions: versions
     ~/.zshrc: zshrc
     ~/.p10k.zsh: 
       create: true
@@ -20,3 +30,5 @@
   - [git submodule update --init --recursive, Installing submodules]
   - chsh -s $(which zsh)
   - [chsh -s $(which zsh), Making zsh the default shell]
+  - git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
+  - [git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0]
