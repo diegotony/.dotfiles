@@ -97,5 +97,3 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-
-[[ -s "/home/kakashi/.gvm/scripts/gvm" ]] && source "/home/kakashi/.gvm/scripts/gvm"

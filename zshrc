@@ -113,9 +113,18 @@ export PATH=/usr/local/bin:$PATH
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# asdf
+## asdf
 . $HOME/.asdf/asdf.sh
-# append completions to fpath
+## append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
+## refresh go packages
+asdf reshim golang
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+
+# Gopass
+	if gopass --help &>/dev/null; then
+    source <(gopass completion bash)
+fi
+
+
