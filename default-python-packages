@@ -1,0 +1,4 @@
+ansible
+pipenv
+awscli
+aws-sam-cli

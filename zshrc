@@ -70,7 +70,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=${ZSH}/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 
 # AWS 
 export PATH=/usr/local/bin:$PATH
-
+# /usr/local/bin/sam
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -119,6 +119,8 @@ export PATH=/usr/local/bin:$PATH
 fpath=(${ASDF_DIR}/completions $fpath)
 ## refresh go packages
 asdf reshim golang
+## python packages
+asdf reshim python
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 
@@ -127,4 +129,4 @@ autoload -Uz compinit && compinit
     source <(gopass completion bash)
 fi
 
-
+alias me="neofetch --config /home/kakashi/me-experiments/me-shell/config.conf --jp2a /home/kakashi/me-experiments/me-shell/peOQL9mNSa.jpg --size 43% --crop_mode fill background_color=white"

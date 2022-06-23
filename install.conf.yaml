@@ -21,6 +21,10 @@
       create: true
       relink: true
       path: p10k
+    ~/.default-python-packages: 
+      create: true
+      relink: true
+      path: default-python-packages
     ~/.oh-my-zsh/custom/plugins:
       create: true
       relink: true
