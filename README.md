@@ -1,0 +1,2 @@
+# .dotfiles
+Me current setup
