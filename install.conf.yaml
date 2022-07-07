@@ -15,6 +15,10 @@
 
 - link:
     ~/.bashrc: bashrc
+    # ~/.config/alacritty/alacritty.yml :
+    #   create: true
+    #   relink: true
+    #   path: alacritty
     ~/.tool-versions: versions
     ~/.zshrc: zshrc
     ~/.p10k.zsh: 
